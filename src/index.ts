@@ -18,12 +18,12 @@ app.use(bodyParser.json());
 
 const server = http.createServer(app);
 
-server.listen(44303, () => {
-    console.log("server running on https://localhost/44303/");
+server.listen(8080, () => {
+    console.log("server running on https://localhost:8080/");
 });
 
 //mongodb+srv://ilyas:<password>@cluster0.gxlyago.mongodb.net/?retryWrites=true&w=majority
-const MONGO_URL = 'mongodb+srv://ilyas:hassan12%21%40@cluster0.gxlyago.mongodb.net/?retryWrites=true&w=majority';
+const MONGO_URL = 'mongodb+srv://ilyas:hassan12@cluster0.gxlyago.mongodb.net/?retryWrites=true&w=majority';
 
 mongoose.Promise = Promise;
 mongoose.connect(MONGO_URL);
