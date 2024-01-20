@@ -1,0 +1,8 @@
+GET	 http://localhost:8080/api/tutorials	get all Tutorials
+GET	 http://localhost:8080/api/tutorials/:id	get Tutorial by id
+POST http://localhost:8080/api/tutorials	add new Tutorial
+PUT	 http://localhost:8080/api/tutorials/:id	update Tutorial by id
+DELETE	http://localhost:8080/api/tutorials/:id	remove Tutorial by id
+DELETE	http://localhost:8080/api/tutorials	remove all Tutorials
+GET	    http://localhost:8080/api/tutorials/published	find all published Tutorials
+GET	    http://localhost:8080api/tutorials?title=[kw]	find all Tutorials which title contains 'kw'
